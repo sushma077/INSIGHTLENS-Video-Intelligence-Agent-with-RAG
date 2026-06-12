@@ -48,9 +48,32 @@ The system leverages Retrieval-Augmented Generation (RAG) with LangChain, Chroma
                      Mistral RAG Chain
                              ▼
                    Conversational Chat
-                             ▼
+                             ▼ 
                         Streamlit UI
 
 
-## Demo Video Link: 
-    https://drive.google.com/drive/folders/1f6sWCuSBbzKQpa8LTugrHjcsRD_9CMV_?usp=sharing
+## Project Structure
+        INSIGHTLENS-Video-Intelligence-Agent-with-RAG/
+        │
+        ├── helpers/
+        │   ├── audio_extractor.py        # Handles audio extraction from YouTube/local files
+        │   └── __pycache__/              # Compiled Python files
+        │
+        ├── visionRag/
+        │   ├── meeting_summarizer.py     # Generates summaries and titles using LLM
+        │   ├── rag_pipeline.py           # Implements Retrieval-Augmented Generation (RAG)
+        │   ├── retrieval_store.py        # Vector database creation and semantic retrieval
+        │   ├── speech_transcriber.py     # Speech-to-text using Whisper/Sarvam AI
+        │   ├── transcript_analyzer.py    # Extracts action items, decisions, questions
+        │   └── __pycache__/              # Compiled Python files
+        │
+        ├── app.py                        # Streamlit frontend application
+        ├── test_main.py                  # Testing script for pipeline execution
+        ├── requirements.txt              # Project dependencies
+        ├── README.md                     # Project documentation
+        └── InsightLens_Report.pdf        # Detailed project report
+
+        
+
+## Demo Video
+  --link: https://drive.google.com/drive/folders/1f6sWCuSBbzKQpa8LTugrHjcsRD_9CMV_?usp=sharing
